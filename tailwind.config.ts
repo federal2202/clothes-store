@@ -17,6 +17,8 @@ export default {
       },
       animation: {
         shimmer: "shimmer 2s linear infinite",
+        'float-up': 'floatUp 1.5s ease-out forwards',
+        
       },
       keyframes: {
         shimmer: {
@@ -26,6 +28,10 @@ export default {
           to: {
             backgroundPosition: "-200% 0",
           },
+        },
+        floatUp: {
+          '0%': { transform: 'translateY(100px)' },
+          '100%': { transform: 'translateY(0)' },
         },
       },
     },
