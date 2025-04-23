@@ -1,45 +1,12 @@
 "use client";
 
 import HeroScene from './HeroScene';
-import MagicButton from './ui/MagicButton'
 import Squares from './ui/Squares'
-import { TypewriterEffectSmooth } from './ui/TyperWriter';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 
 export default function Hero(){
-    const words = [
-        {
-          text: "A",
-        },
-        {
-          text: "Brand",
-        },
-        {
-          text: "That’s",
-        },
-        {
-          text: "Redefining",
-        },
-        {
-          text: "Style",
-        },
-        {
-            text: "with",
-        },
-        {
-            text: "Care",
-            className: "text-blue-500 dark:text-blue-500",
-        },
-        {
-            text: "and",
-        },
-        {
-          text: "Innovation.",
-          className: "text-blue-500 dark:text-blue-500",
-        },
-      ];
       const leftTextRef = useRef<HTMLDivElement>(null); // Ссылка на левый блок
       const rightTextRef = useRef<HTMLDivElement>(null); // Ссылка на правый блок
     

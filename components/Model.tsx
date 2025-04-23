@@ -1,16 +1,17 @@
 "use client";
 
+import { useGLTF } from "@react-three/drei";
+import { useRef } from "react";
+import { Group } from "three";
 
-import { useAnimations, useGLTF } from '@react-three/drei';
+export default function Cube() {
+    const groupRef = useRef<Group>(null);
 
-useGLTF("/t_shirt.glb")
+    const { scene } = useGLTF("/t_shirt.glb");
 
-export default function Cube(){
-    const {nodes, animations, scene} = useGLTF("/t_shirt.glb");
-    const { actions } = useAnimations(animations, scene)
     return (
-        <group>
-            <primitive object={scene}/>
+        <group ref={groupRef}>
+            <primitive object={scene} />
         </group>
-    )
+    );
 }

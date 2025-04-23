@@ -1,8 +1,7 @@
 
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import BuySection from "@/components/BuySection";
-import HeroScene from "@/components/HeroScene";
+import BuySection from "@/components/BuySection"; 
 import Changelog from "@/components/Changelog";
 
 
