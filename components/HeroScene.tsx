@@ -37,7 +37,7 @@ const ShirtModel = () => {
 
 const HeroScene = () => {
   return (
-    <div className="relative 2xl:w-[33%] w-full">
+    <div className="relative 2xl:w-[33%] w-full xl:w-[33%]">
       {/* Three.js Canvas */}
       <Canvas camera={{ position: [0, 1, 3], fov: 50 }} className="absolute inset-0 z-10">
         <ambientLight intensity={0.5} />

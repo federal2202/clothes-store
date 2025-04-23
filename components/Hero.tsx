@@ -64,10 +64,11 @@ export default function Hero(){
       }, []);
     return (
       <div className="relative h-screen w-full flex justify-evenly bg-black py-4 px-4 md:px-16 lg:px-28">
+        <Squares direction='down' speed={0.3}/>
       {/* Левый текстовый блок */}
       <div
         ref={leftTextRef}
-        className="text-white z-20 w-[33%] pt-24 hidden 2xl:block"
+        className="text-white z-20 w-[33%] pt-24 hidden xl:block 2xl:block"
       >
         <p className="opacity-100 hover:opacity-100 transition-opacity duration-300 font-bold text-5xl leading-snug">
           Discover the latest trends in{" "}
@@ -84,9 +85,9 @@ export default function Hero(){
       {/* Правый текстовый блок */}
       <div
         ref={rightTextRef}
-        className="text-white z-20 text-right w-[33%] font-bold 2xl:text-5xl pt-24 hidden 2xl:block"
+        className="text-white z-20 text-right w-[33%] font-bold 2xl:text-5xl pt-24 hidden 2xl:block xl:block text-5xl"
       >
-        <p className="opacity-100 hover:opacity-100 transition-opacity duration-300 2xl:leading-snug">
+        <p className="opacity-100 hover:opacity-100 transition-opacity duration-300 2xl:leading-snug xl:leading-snug">
           Experience the perfect blend of{" "}
           <span className="text-blue-400 font-bold">quality</span>. Join the
           movement of modern{" "}

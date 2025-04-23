@@ -32,7 +32,7 @@ const PRODUCTS: ProductsInterface[] = [
 
 export default function Products(){
     return (
-        <div className="w-full">
+        <div className="w-full ">
             <h1 className="text-center font-bold text-4xl drop-shadow-[0_0_2px_rgba(255,255,255,0.6)] mb-20">Our Products</h1>
             {/* <div className="w-full"></div> */}
             <div className="flex flex-col md:flex-row gap-y-6 items-center flex-wrap w-fit xl:mx-auto gap-x-4 ">
